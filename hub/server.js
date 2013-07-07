@@ -9,7 +9,7 @@ var parseUrl = require('url').parse;
 var fs = require('fs');
 var path = require('path');
 var less = require('less');
-var logger = require('../../lib/logger');
+var logger = require('./lib/logger');
 
 var server = http.createServer(function(request, response) {
   var url = parseUrl(request.url);
